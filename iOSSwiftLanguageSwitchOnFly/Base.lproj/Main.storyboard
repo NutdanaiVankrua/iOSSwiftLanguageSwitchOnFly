@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CyV-xO-wQV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstVC" customModule="SwitchLanguageRuntime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89D-TP-nJV">
+                                <rect key="frame" x="164.5" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeLanguageBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ft-Bu-dCB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53j-96-V44">
+                                <rect key="frame" x="0.0" y="277" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="53j-96-V44" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="854-lx-oNT"/>
+                            <constraint firstItem="53j-96-V44" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="I3p-v9-b34"/>
+                            <constraint firstItem="89D-TP-nJV" firstAttribute="top" secondItem="53j-96-V44" secondAttribute="bottom" constant="20" id="O6E-eg-vxx"/>
+                            <constraint firstItem="89D-TP-nJV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="knk-fX-xcB"/>
+                            <constraint firstItem="89D-TP-nJV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vuS-ay-j49"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EJT-U4-n3U">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="DeD-zN-Nos">
+                            <connections>
+                                <segue destination="uLO-98-7Gk" kind="show" id="yE4-ve-LKO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnVw" destination="89D-TP-nJV" id="OXe-LP-ELS"/>
+                        <outlet property="labelVw" destination="53j-96-V44" id="PiF-5b-FBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="124"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="Xql-DL-r1w">
+            <objects>
+                <viewController id="uLO-98-7Gk" customClass="SecondVC" customModule="SwitchLanguageRuntime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOx-oP-ajO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mH-cR-fcJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykX-u7-RGL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKW-lE-OTw">
+                                <rect key="frame" x="164" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeLanguageBtnTapped:" destination="uLO-98-7Gk" eventType="touchUpInside" id="daZ-PH-En1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBH-7b-myN">
+                                <rect key="frame" x="0.0" y="278.5" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.80000000000000004" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HKW-lE-OTw" firstAttribute="centerY" secondItem="ykX-u7-RGL" secondAttribute="centerY" id="9ct-vM-bcU"/>
+                            <constraint firstItem="yBH-7b-myN" firstAttribute="width" secondItem="ykX-u7-RGL" secondAttribute="width" id="Lit-b5-tLW"/>
+                            <constraint firstItem="yBH-7b-myN" firstAttribute="centerX" secondItem="ykX-u7-RGL" secondAttribute="centerX" id="TBS-2M-DMj"/>
+                            <constraint firstItem="HKW-lE-OTw" firstAttribute="top" secondItem="yBH-7b-myN" secondAttribute="bottom" constant="20" id="aU5-3T-xxN"/>
+                            <constraint firstItem="HKW-lE-OTw" firstAttribute="centerX" secondItem="ykX-u7-RGL" secondAttribute="centerX" id="gu9-96-FAY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnVw" destination="HKW-lE-OTw" id="yJw-AS-ucD"/>
+                        <outlet property="labelVw" destination="yBH-7b-myN" id="wcs-RN-BNe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daX-wB-eoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752.8" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bld-Lp-yIT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CyV-xO-wQV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nIC-WD-Z2r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wbf-zC-gb0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzz-WH-TAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="124"/>
+        </scene>
+    </scenes>
+</document>

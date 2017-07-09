@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187F49E71F1233E300545EDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F49E61F1233E300545EDA /* AppDelegate.swift */; };
+		187F49EC1F1233E300545EDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187F49EA1F1233E300545EDA /* Main.storyboard */; };
+		187F49EF1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187F49ED1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodeld */; };
+		187F49F11F1233E400545EDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187F49F01F1233E400545EDA /* Assets.xcassets */; };
+		187F49F41F1233E400545EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187F49F21F1233E400545EDA /* LaunchScreen.storyboard */; };
+		187F49FF1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F49FE1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.swift */; };
+		187F4A0A1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F4A091F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.swift */; };
+		187F4A1B1F1234A200545EDA /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F4A181F1234A200545EDA /* BaseVC.swift */; };
+		187F4A1C1F1234A200545EDA /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F4A191F1234A200545EDA /* FirstVC.swift */; };
+		187F4A1D1F1234A200545EDA /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F4A1A1F1234A200545EDA /* SecondVC.swift */; };
+		187F4A201F1234B600545EDA /* LanguageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F4A1F1F1234B600545EDA /* LanguageListener.swift */; };
+		187F4A291F1234CD00545EDA /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F4A241F1234CD00545EDA /* LanguageManager.swift */; };
+		187F4A2A1F1234CD00545EDA /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F4A251F1234CD00545EDA /* Languages.swift */; };
+		187F4A2E1F12350000545EDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 187F4A2C1F12350000545EDA /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		187F49FB1F1233E400545EDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187F49DB1F1233E300545EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187F49E21F1233E300545EDA;
+			remoteInfo = iOSSwiftLanguageSwitchOnFly;
+		};
+		187F4A061F1233E400545EDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187F49DB1F1233E300545EDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187F49E21F1233E300545EDA;
+			remoteInfo = iOSSwiftLanguageSwitchOnFly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		187F49E31F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwiftLanguageSwitchOnFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		187F49E61F1233E300545EDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		187F49EB1F1233E300545EDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		187F49EE1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSSwiftLanguageSwitchOnFly.xcdatamodel; sourceTree = "<group>"; };
+		187F49F01F1233E400545EDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		187F49F31F1233E400545EDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		187F49F51F1233E400545EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187F49FA1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSwiftLanguageSwitchOnFlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187F49FE1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftLanguageSwitchOnFlyTests.swift; sourceTree = "<group>"; };
+		187F4A001F1233E400545EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187F4A051F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSwiftLanguageSwitchOnFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187F4A091F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftLanguageSwitchOnFlyUITests.swift; sourceTree = "<group>"; };
+		187F4A0B1F1233E400545EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187F4A181F1234A200545EDA /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseVC.swift; path = Controllers/BaseVC.swift; sourceTree = "<group>"; };
+		187F4A191F1234A200545EDA /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstVC.swift; path = Controllers/FirstVC.swift; sourceTree = "<group>"; };
+		187F4A1A1F1234A200545EDA /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondVC.swift; path = Controllers/SecondVC.swift; sourceTree = "<group>"; };
+		187F4A1F1F1234B600545EDA /* LanguageListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageListener.swift; path = Protocols/LanguageListener.swift; sourceTree = "<group>"; };
+		187F4A241F1234CD00545EDA /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageManager.swift; path = Language/LanguageManager.swift; sourceTree = "<group>"; };
+		187F4A251F1234CD00545EDA /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Languages.swift; path = Language/Languages.swift; sourceTree = "<group>"; };
+		187F4A2D1F12350000545EDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Language/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		187F4A2F1F12352700545EDA /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = Language/th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		187F4A301F12354A00545EDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Language/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187F49E01F1233E300545EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187F49F71F1233E400545EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187F4A021F1233E400545EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187F49DA1F1233E300545EDA = {
+			isa = PBXGroup;
+			children = (
+				187F49E51F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly */,
+				187F49FD1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests */,
+				187F4A081F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests */,
+				187F49E41F1233E300545EDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187F49E41F1233E300545EDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187F49E31F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly.app */,
+				187F49FA1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.xctest */,
+				187F4A051F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187F49E51F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly */ = {
+			isa = PBXGroup;
+			children = (
+				187F4A211F1234BE00545EDA /* Language */,
+				187F4A1E1F1234A500545EDA /* Protocols */,
+				187F4A171F12340400545EDA /* Controllers */,
+				187F49E61F1233E300545EDA /* AppDelegate.swift */,
+				187F49EA1F1233E300545EDA /* Main.storyboard */,
+				187F49F01F1233E400545EDA /* Assets.xcassets */,
+				187F49F21F1233E400545EDA /* LaunchScreen.storyboard */,
+				187F49F51F1233E400545EDA /* Info.plist */,
+				187F49ED1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodeld */,
+			);
+			path = iOSSwiftLanguageSwitchOnFly;
+			sourceTree = "<group>";
+		};
+		187F49FD1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				187F49FE1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.swift */,
+				187F4A001F1233E400545EDA /* Info.plist */,
+			);
+			path = iOSSwiftLanguageSwitchOnFlyTests;
+			sourceTree = "<group>";
+		};
+		187F4A081F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				187F4A091F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.swift */,
+				187F4A0B1F1233E400545EDA /* Info.plist */,
+			);
+			path = iOSSwiftLanguageSwitchOnFlyUITests;
+			sourceTree = "<group>";
+		};
+		187F4A171F12340400545EDA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				187F4A181F1234A200545EDA /* BaseVC.swift */,
+				187F4A191F1234A200545EDA /* FirstVC.swift */,
+				187F4A1A1F1234A200545EDA /* SecondVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		187F4A1E1F1234A500545EDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				187F4A1F1F1234B600545EDA /* LanguageListener.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		187F4A211F1234BE00545EDA /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				187F4A2C1F12350000545EDA /* Localizable.strings */,
+				187F4A241F1234CD00545EDA /* LanguageManager.swift */,
+				187F4A251F1234CD00545EDA /* Languages.swift */,
+			);
+			name = Language;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187F49E21F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187F4A0E1F1233E400545EDA /* Build configuration list for PBXNativeTarget "iOSSwiftLanguageSwitchOnFly" */;
+			buildPhases = (
+				187F49DF1F1233E300545EDA /* Sources */,
+				187F49E01F1233E300545EDA /* Frameworks */,
+				187F49E11F1233E300545EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSSwiftLanguageSwitchOnFly;
+			productName = iOSSwiftLanguageSwitchOnFly;
+			productReference = 187F49E31F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		187F49F91F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187F4A111F1233E400545EDA /* Build configuration list for PBXNativeTarget "iOSSwiftLanguageSwitchOnFlyTests" */;
+			buildPhases = (
+				187F49F61F1233E400545EDA /* Sources */,
+				187F49F71F1233E400545EDA /* Frameworks */,
+				187F49F81F1233E400545EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187F49FC1F1233E400545EDA /* PBXTargetDependency */,
+			);
+			name = iOSSwiftLanguageSwitchOnFlyTests;
+			productName = iOSSwiftLanguageSwitchOnFlyTests;
+			productReference = 187F49FA1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		187F4A041F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187F4A141F1233E400545EDA /* Build configuration list for PBXNativeTarget "iOSSwiftLanguageSwitchOnFlyUITests" */;
+			buildPhases = (
+				187F4A011F1233E400545EDA /* Sources */,
+				187F4A021F1233E400545EDA /* Frameworks */,
+				187F4A031F1233E400545EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187F4A071F1233E400545EDA /* PBXTargetDependency */,
+			);
+			name = iOSSwiftLanguageSwitchOnFlyUITests;
+			productName = iOSSwiftLanguageSwitchOnFlyUITests;
+			productReference = 187F4A051F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187F49DB1F1233E300545EDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "NutdanaiV Macbook Pro";
+				TargetAttributes = {
+					187F49E21F1233E300545EDA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X64KFLXG3H;
+						ProvisioningStyle = Automatic;
+					};
+					187F49F91F1233E400545EDA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X64KFLXG3H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 187F49E21F1233E300545EDA;
+					};
+					187F4A041F1233E400545EDA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X64KFLXG3H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 187F49E21F1233E300545EDA;
+					};
+				};
+			};
+			buildConfigurationList = 187F49DE1F1233E300545EDA /* Build configuration list for PBXProject "iOSSwiftLanguageSwitchOnFly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				th,
+			);
+			mainGroup = 187F49DA1F1233E300545EDA;
+			productRefGroup = 187F49E41F1233E300545EDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187F49E21F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly */,
+				187F49F91F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests */,
+				187F4A041F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187F49E11F1233E300545EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187F4A2E1F12350000545EDA /* Localizable.strings in Resources */,
+				187F49F41F1233E400545EDA /* LaunchScreen.storyboard in Resources */,
+				187F49F11F1233E400545EDA /* Assets.xcassets in Resources */,
+				187F49EC1F1233E300545EDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187F49F81F1233E400545EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187F4A031F1233E400545EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187F49DF1F1233E300545EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187F49EF1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodeld in Sources */,
+				187F4A2A1F1234CD00545EDA /* Languages.swift in Sources */,
+				187F4A291F1234CD00545EDA /* LanguageManager.swift in Sources */,
+				187F4A1D1F1234A200545EDA /* SecondVC.swift in Sources */,
+				187F4A1C1F1234A200545EDA /* FirstVC.swift in Sources */,
+				187F4A201F1234B600545EDA /* LanguageListener.swift in Sources */,
+				187F4A1B1F1234A200545EDA /* BaseVC.swift in Sources */,
+				187F49E71F1233E300545EDA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187F49F61F1233E400545EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187F49FF1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187F4A011F1233E400545EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187F4A0A1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFlyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		187F49FC1F1233E400545EDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187F49E21F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly */;
+			targetProxy = 187F49FB1F1233E400545EDA /* PBXContainerItemProxy */;
+		};
+		187F4A071F1233E400545EDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187F49E21F1233E300545EDA /* iOSSwiftLanguageSwitchOnFly */;
+			targetProxy = 187F4A061F1233E400545EDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		187F49EA1F1233E300545EDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187F49EB1F1233E300545EDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		187F49F21F1233E400545EDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187F49F31F1233E400545EDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		187F4A2C1F12350000545EDA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187F4A2D1F12350000545EDA /* Base */,
+				187F4A2F1F12352700545EDA /* th */,
+				187F4A301F12354A00545EDA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187F4A0C1F1233E400545EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		187F4A0D1F1233E400545EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187F4A0F1F1233E400545EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X64KFLXG3H;
+				INFOPLIST_FILE = iOSSwiftLanguageSwitchOnFly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.nutdanai.iOSSwiftLanguageSwitchOnFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		187F4A101F1233E400545EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X64KFLXG3H;
+				INFOPLIST_FILE = iOSSwiftLanguageSwitchOnFly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.nutdanai.iOSSwiftLanguageSwitchOnFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		187F4A121F1233E400545EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X64KFLXG3H;
+				INFOPLIST_FILE = iOSSwiftLanguageSwitchOnFlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.nutdanai.iOSSwiftLanguageSwitchOnFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSSwiftLanguageSwitchOnFly.app/iOSSwiftLanguageSwitchOnFly";
+			};
+			name = Debug;
+		};
+		187F4A131F1233E400545EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X64KFLXG3H;
+				INFOPLIST_FILE = iOSSwiftLanguageSwitchOnFlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.nutdanai.iOSSwiftLanguageSwitchOnFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSSwiftLanguageSwitchOnFly.app/iOSSwiftLanguageSwitchOnFly";
+			};
+			name = Release;
+		};
+		187F4A151F1233E400545EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X64KFLXG3H;
+				INFOPLIST_FILE = iOSSwiftLanguageSwitchOnFlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.nutdanai.iOSSwiftLanguageSwitchOnFlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = iOSSwiftLanguageSwitchOnFly;
+			};
+			name = Debug;
+		};
+		187F4A161F1233E400545EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X64KFLXG3H;
+				INFOPLIST_FILE = iOSSwiftLanguageSwitchOnFlyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.nutdanai.iOSSwiftLanguageSwitchOnFlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = iOSSwiftLanguageSwitchOnFly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187F49DE1F1233E300545EDA /* Build configuration list for PBXProject "iOSSwiftLanguageSwitchOnFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187F4A0C1F1233E400545EDA /* Debug */,
+				187F4A0D1F1233E400545EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187F4A0E1F1233E400545EDA /* Build configuration list for PBXNativeTarget "iOSSwiftLanguageSwitchOnFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187F4A0F1F1233E400545EDA /* Debug */,
+				187F4A101F1233E400545EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187F4A111F1233E400545EDA /* Build configuration list for PBXNativeTarget "iOSSwiftLanguageSwitchOnFlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187F4A121F1233E400545EDA /* Debug */,
+				187F4A131F1233E400545EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187F4A141F1233E400545EDA /* Build configuration list for PBXNativeTarget "iOSSwiftLanguageSwitchOnFlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187F4A151F1233E400545EDA /* Debug */,
+				187F4A161F1233E400545EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		187F49ED1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				187F49EE1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodel */,
+			);
+			currentVersion = 187F49EE1F1233E400545EDA /* iOSSwiftLanguageSwitchOnFly.xcdatamodel */;
+			path = iOSSwiftLanguageSwitchOnFly.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 187F49DB1F1233E300545EDA /* Project object */;
+}
